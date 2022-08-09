@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+:root {
+    --main-boxborder-color: #8055FF;
+    --main-border-color: #459DF5;
+    --main-black-text-color: #000000;
+    --day-lightblue-color: #BAD8F5;
+    --error-color: #F53152;
+    --blue-color: #459DF5;
+    --day-white-color: #FFFFFF
+}
+
+input::-webkit-input-placeholder { color: var(--day-lightblue-color) }
+
+body {
+    background-color: #E5E5E5;
+}
+
+section {
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 0.3125rem;
+    border: 0.0625rem dashed var(--main-boxborder-color);
+}
+
+.box__input {
+    height: 360px;
+    width: 352px;
+    left: 0px;
+    top: 288px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box__searchbar {
+    height: 192px;
+    width: 352px;
+    left: 448px;
+    top: 288px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.box__checkbox {
+    height: 64px;
+    width: 104px;
+    left: 448px;
+    top: 576px;
+}
+
+
+
+.box__radio {
+    height: 64px;
+    width: 104px;
+    left: 600px;
+    top: 576px;
+}
+
+.box__button {
+    height: 376px;
+    width: 576px;
+    left: 0px;
+    top: 784px;
+}
+
+.box__dropdowns {
+    height: 512px;
+    width: 672px;
+    left: 672px;
+    top: 784px;
+}
+
+.box__pageheader {
+    height: 208px;
+    width: 786px;
+    left: 0px;
+    top: 1488px;
+    border-radius: 5px;
+
+}
