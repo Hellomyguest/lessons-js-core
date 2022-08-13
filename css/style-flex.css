@@ -1,0 +1,60 @@
+body {
+    margin-top: 4rem;
+}
+.gallery {
+    /* добавь свой код здесь, если надо */
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+  
+    width: 1000px;
+	margin: 0 auto;
+}
+.gallery__info {
+    /* добавь свой код здесь, если надо */
+    flex-basis: 30%;
+    height: 400px;
+    background: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+}
+.gallery__main-slide {
+    /* добавь свой код здесь, если надо */
+    flex-basis: 70%;
+    justify-content: center;
+    align-items: center;
+
+    height: 400px;
+    background: lightslategrey;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.gallery__slides {
+    /* добавь свой код здесь, если надо */
+
+    padding: 3rem 1rem;
+	flex: 0 1 100%;
+    background: lightskyblue;
+}
+
+
+/* Блок "Слайдер" */
+.slides {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+.slides__slide {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    background: lightgoldenrodyellow;
+}
