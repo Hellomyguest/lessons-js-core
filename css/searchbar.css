@@ -4,8 +4,11 @@
 
 input[type="search"]::-webkit-search-cancel-button {-webkit-appearance: none;}
 
-.searchbar_empty {
-    margin-top: 48px;
+.box__searchbar {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .searchbar__area {
