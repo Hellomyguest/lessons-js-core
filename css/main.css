@@ -9,6 +9,9 @@
     --blue-color: #459DF5;
     --day-white-color: #FFFFFF;
     --main-focus-outline-color: #367dc4;
+    --postponed-icon-color: #FF8C56;
+    --violet-color: #8055FF;
+    --green-color: #0FB864;
 }
 
 input::-webkit-input-placeholder { color: var(--day-lightblue-color) }

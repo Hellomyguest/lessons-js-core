@@ -72,6 +72,10 @@
     color: var(--blue-color);
 }
 
+.button__area_danger {
+    background-color: var(--error-color);
+}
+
 .button:nth-child(12), .button:nth-child(14) {
     grid-column-start: 2;
     grid-column-end: 4;

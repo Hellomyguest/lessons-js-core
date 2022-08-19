@@ -36,7 +36,7 @@
     letter-spacing: 0px;
     text-align: left;
     background-color: var(--day-white-color);
-    color: var(--day-lightblue-color);
+    color: var(--main-black-text-color);
     
 }
 
@@ -61,15 +61,12 @@
     color: inherit;
     background-color: transparent;
     opacity: 0;
+    cursor: pointer;
 }
 
 .input__icon_disabled {
     fill: var(--main-black-text-color);
     background-color: var(--day-lightblue-color);
-}
-
-.input__text-field:empty {
-    color: var(--day-lightblue-color);
 }
 
 .input__text-field:focus {
@@ -78,13 +75,11 @@
 
 .input__text-field:invalid {
     border-color: var(--error-color);
-    color: var(--main-black-text-color);
 }
 
 .input__text-field:disabled {
     background-color: var(--day-lightblue-color);
     border-color: var(--blue-color);
-    color: var(--main-black-text-color);
 }
 
 .input__text-field:invalid ~ .input__button_x-large {
