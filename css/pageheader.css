@@ -5,14 +5,14 @@
     gap: 3rem;
 }
 
-.header__wrapper {
+.header {
     position: relative;
     display: flex;
     justify-content: space-between;
     height: 2rem;
 }
 
-.header__wrapper > h1 {
+.header > h1 {
     margin: 0;
     font-family: 'Ubuntu';
     font-style: normal;
@@ -21,7 +21,7 @@
     line-height: 32px;
 }
 
-.header__wrapper > .dropdown_switcher {
+.header > .dropdown_switcher {
     position:  absolute;
     top: 2.125rem;
     right: 0;

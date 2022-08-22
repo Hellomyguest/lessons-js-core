@@ -12,20 +12,58 @@
     grid-column-end: 4;
 }
 
-.button__area {
+.button {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 0.5rem 1rem;
-    gap: 0.5rem;
-    height: 2rem;
+    width: fit-content;
     box-sizing: border-box;
     border-radius: 0.25rem;
+    background-color: transparent;
     border: none;
     font: inherit;
     color: inherit;
-    background-color: var(--blue-color);
     cursor: pointer;
+}
+
+.button_size_max-width {
+    width: 100%;
+}
+
+.button_size_medium {
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+    height: 2rem;
+}
+
+.button_size_small {
+    height: 1.5rem;
+    padding: 0.25rem 0.5rem;
+    gap: 0.25rem;
+}
+
+.button_icononly.button_size_medium {
+    padding: 0.5rem;
+}
+
+.button_icononly.button_size_small {
+    padding: 0.25rem;
+}
+ 
+.button_color_blue {
+    background-color: var(--blue-color);
+}
+
+.button_color_reverse-blue {
+    color: var(--blue-color);
+}
+
+.button_color_danger {
+    background-color: var(--error-color);
+}
+
+.button_color_reverse-black {
+    color: var(--main-black-text-color);
 }
 
 .button__text {
@@ -36,24 +74,19 @@
     font-weight: 400;
     line-height: 1rem;
     letter-spacing: 0rem;
-    color: var(--day-white-color);
     white-space: nowrap;
 }
 
-.button__area_small {
-    height: 1.5rem;
-    padding: 0.25rem 0.5rem;
-    gap: 0.25rem;
+.button_color_blue > .button__text {
+    color: var(--day-white-color);
 }
 
-.button__area_text-small {
-    height: 1.5rem;
-    padding: 0.25rem 0.5rem;
+.button_color_reverse-black > .button__text {
+    color: var(--main-black-text-color);
 }
 
-.button__area_icon-small {
-    height: 1.5rem;
-    padding: 0.25rem;
+.button_color_reverse-blue > .button__text {
+    color: var(--blue-color);
 }
 
 .button__icon {
@@ -63,50 +96,11 @@
     fill: var(--day-white-color);
 }
 
-.button__area_icon-medium {
-    padding: 0.5rem;
-}
-
-.button__area_reverse-blue {
-    background-color:transparent;
-    color: var(--blue-color);
-}
-
-.button__area_danger {
-    background-color: var(--error-color);
-}
-
-.button:nth-child(12), .button:nth-child(14) {
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-
-.button__area_reverse-blue > .button__icon {
+.button_color_reverse-blue > .button__icon {
     stroke: var(--blue-color);
     fill: var(--blue-color);
 }
 
-.button__area_reverse-blue > .button__text {
-    color: var(--blue-color);
-}
-
-.button__area_reverse-black {
-    background-color:transparent;
-    color: var(--main-black-text-color);
-}
-
-.button__area_reverse-black > .button__icon {
+.button_color_reverse-black > .button__icon {
     stroke: var(--main-black-text-color);
-}
-
-.button__area_reverse-black > .button__text {
-    color: var(--main-black-text-color);
-}
-
-.button__area_text-medium > .button__icon, .button__area_text-small > .button__icon {
-    display: none;
-}
-
-.button__area_icon-medium > .button__text, .button__area_icon-small > .button__text {
-    display: none;
 }

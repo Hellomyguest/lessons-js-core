@@ -27,7 +27,7 @@
     height: 2rem;
     border: 0.0625rem solid var(--main-border-color);
     border-radius: 0.25rem;
-    padding: 0.25rem 0.25rem 0.25rem 0.5rem;
+    padding: 0.25rem 2rem 0.25rem 0.5rem;
     box-sizing: border-box;
     font-family: Ubuntu;
     font-size: 13px;
@@ -60,7 +60,7 @@
     font: inherit;
     color: inherit;
     background-color: transparent;
-    opacity: 0;
+    display: none;
     cursor: pointer;
 }
 
@@ -82,14 +82,15 @@
     border-color: var(--blue-color);
 }
 
-.input__text-field:invalid ~ .input__button_x-large {
-    opacity: 1;
-}
-
-.input__text-field:not(:empty) ~ .input__button_x-large {
-    opacity: 1;
+.input__text-field:invalid ~ .input__button_x-medium {
+    display: block;
 }
 
 .input__text-field:disabled ~ .input__button_disabled {
-    opacity: 1;    
+    display: block;
+    cursor: default;
+}
+
+.input__text-field:not([value=""]) ~ .input__icon_x-medium {
+    display: flex;
 }

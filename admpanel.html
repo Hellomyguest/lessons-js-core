@@ -16,22 +16,45 @@
     <link rel="stylesheet" href="css/admpanel.css">
 </head>
 <body>
-    <header class="header__wrapper">
+    <header class="header">
         <h1>Список заказов</h1>
-        <button class="button__area button__area_medium button__area_reverse-blue">
-            <svg viewBox="0 0 16 16" class="button__icon" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="8" cy="8" r="4" stroke="none"/>
-                <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none"/>
-                <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none"/>
-                <path d="M7 15L8 16L9 15V13H7V15Z" stroke="none"/>
-                <path d="M7 1L8 0L9 1V3H7V1Z" stroke="none"/>
-                <path d="M12.5 14H14L14 12.5L12.5 11L11 12.5L12.5 14Z" stroke="none"/>
-                <path d="M2 3.5L2 2L3.5 2L5 3.5L3.5 5L2 3.5Z" stroke="none"/>
-                <path d="M3.5 14H2L2 12.5L3.5 11L5 12.5L3.5 14Z" stroke="none"/>
-                <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none"/>
-                </svg>
-            <span class="button__text">Светлая тема</span> 
-        </button>
+            <button class="button button_size_medium button_color_reverse-blue button_theme-switcher">
+                <svg viewBox="0 0 16 16" class="button__icon" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="8" cy="8" r="4" stroke="none"/>
+                    <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none"/>
+                    <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none"/>
+                    <path d="M7 15L8 16L9 15V13H7V15Z" stroke="none"/>
+                    <path d="M7 1L8 0L9 1V3H7V1Z" stroke="none"/>
+                    <path d="M12.5 14H14L14 12.5L12.5 11L11 12.5L12.5 14Z" stroke="none"/>
+                    <path d="M2 3.5L2 2L3.5 2L5 3.5L3.5 5L2 3.5Z" stroke="none"/>
+                    <path d="M3.5 14H2L2 12.5L3.5 11L5 12.5L3.5 14Z" stroke="none"/>
+                    <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none"/>
+                    </svg>
+                <span class="button__text">Светлая тема</span> 
+            </button>
+            <div class="dropdown dropdown_switcher dropdown_hidden">
+            <span class="dropdown__name">Выберете тему</span>
+            <button class="button button_size_max-width button_size_small button_color_reverse-blue button_light-theme">
+                <svg viewBox="0 0 16 16" class="button__icon" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="8" cy="8" r="4" stroke="none"/>
+                    <path d="M15 9L16 8L15 7H13V9H15Z" stroke="none"/>
+                    <path d="M1 9L0 8L1 7H3V9H1Z" stroke="none"/>
+                    <path d="M7 15L8 16L9 15V13H7V15Z" stroke="none"/>
+                    <path d="M7 1L8 0L9 1V3H7V1Z" stroke="none"/>
+                    <path d="M12.5 14H14L14 12.5L12.5 11L11 12.5L12.5 14Z" stroke="none"/>
+                    <path d="M2 3.5L2 2L3.5 2L5 3.5L3.5 5L2 3.5Z" stroke="none"/>
+                    <path d="M3.5 14H2L2 12.5L3.5 11L5 12.5L3.5 14Z" stroke="none"/>
+                    <path d="M14 3.5V2L12.5 2L11 3.5L12.5 5L14 3.5Z" stroke="none"/>
+                    </svg>
+                <span class="button__text">Светлая</span> 
+            </button>
+            <button class="button button_size_max-width button_size_small button_color_blue button_dark-theme">
+                <svg viewBox="0 0 16 16" class="button__icon" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 15C12.0269 15 15.5 11.5021 15 7.5C14.7688 10.0468 12.6071 12 10 12C7.23858 12 5 9.76142 5 7C5 4.23858 7.23858 2 10 2C11 2 12 2.5 12 2.5C11 1.5 10 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z" stroke="none"/>
+                    </svg>
+                <span class="button__text">Темная</span> 
+            </button>
+        </div>
     </header>
     <div class="filter">
         <div class="filter__search-area">
@@ -47,13 +70,13 @@
                         </svg>
                     </button>
                 </div>
-                <button class="button__area button__area_medium">
+                <button class="button button_size_medium button_color_blue">
                     <svg viewBox="0 0 16 16" class="button__icon" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 4H4V5.5L7 8.5V12L9 13V8.5L12 5.5V4Z" stroke="none"/>
                     </svg>
                     <span class="button__text">Фильтры</span>
                 </button>
-                <button class="button__area button__area_text-medium button__area_reverse-blue">
+                <button class="button button_size_medium button_color_reverse-blue">
                     <svg viewBox="0 0 16 16" class="button__icon" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.5 12.5L3.5 3.5" fill="none"/>
                         <circle cx="8" cy="8" r="6.5" fill="none"/>
@@ -79,8 +102,8 @@
                         <div class="input__area input__area_from">
                             <span class="input__mask">с</span>
                             <input class="input__text-field input__text-field_from" id="input-text" pattern="[0-9]{2}.[0-9]{2}.[0-9]{4}" type="text" value="20.01.2021">
-                            <button class="input__button input__button_x-large">
-                                <svg class="input__icon input__icon_x-large" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <button class="input__button input__button_x-medium">
+                                <svg class="input__icon input__icon_x-medium" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5" fill="none"/>
                                 </svg>
                             </button>
@@ -93,8 +116,8 @@
                         </div>
                         <div class="input__area">
                             <input class="input__text-field input__text-field_to" id="input-text" pattern="[0-9]{2}.[0-9]{2}.[0-9]{4}" type="text" placeholder="dd.mm.dddd">
-                            <button class="input__button input__button_x-large">
-                                <svg class="input__icon input__icon_x-large" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <button class="input__button input__button_x-medium">
+                                <svg class="input__icon input__icon_x-medium" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5" fill="none"/>
                                 </svg>
                             </button>
@@ -199,8 +222,8 @@
                     <div class="input__area input__area_from">
                         <span class="input__mask">от</span>
                         <input class="input__text-field input__text-field_from" id="input-text" type="text" value="5000">
-                        <button class="input__button input__button_x-large">
-                            <svg class="input__icon input__icon_x-large" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <button class="input__button input__button_x-medium">
+                            <svg class="input__icon input__icon_x-medium" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5" fill="none"/>
                             </svg>
                         </button>
@@ -213,8 +236,8 @@
                     </div>
                     <div class="input__area">
                         <input class="input__text-field input__text-field_to" id="input-text" type="text" placeholder="₽">
-                        <button class="input__button input__button_x-large">
-                            <svg class="input__icon input__icon_x-large" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        <button class="input__button input__button_x-medium">
+                            <svg class="input__icon input__icon_x-medium" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5" fill="none"/>
                             </svg>
                         </button>
@@ -230,7 +253,7 @@
             </div>
         </div>
         <div class="filter__button">
-            <button class="button__area button__area_text-medium button__area_reverse-blue">
+            <button class="button button_size_medium button_color_reverse-blue">
                 <svg viewBox="0 0 16 16" class="button__icon" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.5 12.5L3.5 3.5" fill="none"/>
                     <circle cx="8" cy="8" r="6.5" fill="none"/>
@@ -242,7 +265,7 @@
     </div>
     <div class="table">
         <div class="table__header">
-            <div class="header__area">
+            <div class="table__cell table__cell_heading">
                 <div class="checkbox">
                     <label>
                         <input class="checkbox__area" type="checkbox">
@@ -252,32 +275,32 @@
                     </label> 
                 </div> 
             </div>
-            <div class="header__area">
-                <span class="header__label">#</span>
+            <div class="table__cell table__cell_heading">
+                <span class="table__text table__text_heading">#</span>
             </div>
-            <div class="header__area header__area_wicon">
-                <span class="header__label">Дата</span>
-                <svg viewBox="0 0 16 16" class="header__icon" xmlns="http://www.w3.org/2000/svg">
+            <div class="table__cell table__cell_heading">
+                <span class="table__text table__text_heading">Дата</span>
+                <svg viewBox="0 0 16 16" class="table__icon" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 6H11V6.5L8.25 11H7.75L5 6.5V6Z" stroke="none"/>
                 </svg>
             </div>
-            <div class="header__area">
-                <span class="header__label">Статус</span>
+            <div class="table__cell table__cell_heading">
+                <span class="table__text table__text_heading">Статус</span>
             </div>
-            <div class="header__area header__area_wicon">
-                <span class="header__label">Позиций</span>
-                <svg viewBox="0 0 16 16" class="header__icon" xmlns="http://www.w3.org/2000/svg">
+            <div class="table__cell table__cell_heading">
+                <span class="table__text table__text_heading">Позиций</span>
+                <svg viewBox="0 0 16 16" class="table__icon" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 6H11V6.5L8.25 11H7.75L5 6.5V6Z" stroke="none"/>
                 </svg>
             </div>
-            <div class="header__area header__area_wicon">
-                <span class="header__label">Сумма</span>
-                <svg viewBox="0 0 16 16" class="header__icon" xmlns="http://www.w3.org/2000/svg">
+            <div class="table__cell table__cell_heading">
+                <span class="table__text table__text_heading">Сумма</span>
+                <svg viewBox="0 0 16 16" class="table__icon" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 6H11V6.5L8.25 11H7.75L5 6.5V6Z" stroke="none"/>
                 </svg>
             </div>
-            <div class="header__area">
-                <span class="header__label">ФИО покупателя</span>
+            <div class="table__cell table__cell_heading">
+                <span class="table__text table__text_heading">ФИО покупателя</span>
             </div>
         </div>
         <div class="table__body">
@@ -717,7 +740,7 @@
         <div class="table__footer">
             <div class="footer__area">
                 <span class="footer__bunch">Выбрано записей: 5</span>
-                <button class="button__area button__area_small">
+                <button class="button button_size_small button_color_blue">
                     <svg viewBox="0 0 16 16" class="button__icon" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 14.5H15" fill="none"/>
                         <path d="M5 13L1.5 14.5L3 11M5 13L3 11M5 13L12 6M3 11L10 4M11 3L12.5 1.5L14.5 3.5L13 5M11 3L13 5M11 3L10 4M13 5L12 6M12 6L10 4" fill="none"/>
@@ -725,7 +748,7 @@
                     <span class="button__text">Изменить статус</span>
                 </button>
                 <div class="button-wrapper">
-                    <button class="button__area button__area_small button__area_danger">
+                    <button class="button button_size_small button_color_danger">
                         <svg viewBox="0 0 16 16" class="button__icon" xmlns="http://www.w3.org/2000/svg">
                             <path d="M2 3.5H3.5M14 3.5H12.5M5.5 3.5H10.5M5.5 3.5V2.5C5.5 1.94772 5.94772 1.5 6.5 1.5H9.5C10.0523 1.5 10.5 1.94772 10.5 2.5V3.5M5.5 3.5H3.5M10.5 3.5H12.5M3.5 3.5V13.5C3.5 14.0523 3.94772 14.5 4.5 14.5H11.5C12.0523 14.5 12.5 14.0523 12.5 13.5V3.5" fill="none" stroke-linecap="round"/>
                             <path d="M6.5 6V12M9.5 6V12" fill="none" stroke-linecap="round"/>
@@ -734,18 +757,11 @@
                     </button>    
                     <div class="dropdown dropdown_delete">
                         <span class="dropdown__name">Удалить n записей?</span>
-                        <button class="button__area button__area_text-small button__area_reverse-blue">
-                            <svg viewBox="0 0 16 16" class="button__icon" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.5 12.5L3.5 3.5" fill="none"/>
-                                <circle cx="8" cy="8" r="6.5" fill="none"/>
+                        <button class="button button_size_max-width button_size_small button_color_reverse-blue">
                             </svg>
                             <span class="button__text">Удалить</span> 
                         </button>
-                        <button class="button__area button__area_text-small">
-                            <svg viewBox="0 0 16 16" class="button__icon" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.5 12.5L3.5 3.5" fill="none"/>
-                                <circle cx="8" cy="8" r="6.5" fill="none"/>
-                            </svg>
+                        <button class="button button_size_max-width button_size_small button_color_blue">
                             <span class="button__text">Отмена</span> 
                         </button>
                     </div>
@@ -753,27 +769,28 @@
             </div>
             <div class="footer__area footer__area_mgap">
                 <div class="footer__pagination">
-                    <button class="button__area button__area_text-small">
+                    <button class="button button_size_small button_color_blue">
                         <span class="button__text">1</span> 
                     </button>
-                    <button class="button__area button__area_text-small button__area_reverse-blue">
+                    <button class="button button_size_small button_color_reverse-blue">
                         <span class="button__text">2</span> 
                     </button>
-                    <button class="button__area button__area_text-small button__area_reverse-blue">
+                    <button class="button button_size_small button_color_reverse-blue">
                         <span class="button__text">3</span> 
                     </button>
-                    <button class="button__area button__area_text-small button__area_reverse-blue">
+                    <button class="button button_size_small button_color_reverse-blue">
                         <span class="button__text">...</span> 
                     </button>
-                    <button class="button__area button__area_text-small button__area_reverse-blue">
+                    <button class="button button_size_small button_color_reverse-blue">
                         <span class="button__text">18</span> 
                     </button>
                 </div>
-                <button class="button__area button__area_text-small button__area_reverse-blue">
+                <button class="button button_size_small button_color_reverse-blue">
                     <span class="button__text">#</span> 
                 </button>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -141,11 +141,21 @@ section {
     letter-spacing: 0px;
 }
 
+.button:nth-child(12), .button:nth-child(14) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
 .box__dropdowns {
     height: 32rem;
     width: 42rem;
     left: 42rem;
     top: 49rem;
+}
+
+.dropdown_single {  
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 
 .box__dropdowns::before {
