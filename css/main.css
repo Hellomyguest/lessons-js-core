@@ -12,12 +12,15 @@
     --postponed-icon-color: #FF8C56;
     --violet-color: #8055FF;
     --green-color: #0FB864;
+    --night-theme-color: #2B2D33;
+    --night-theme-colo-dark: #171B1F;
 }
 
 input::-webkit-input-placeholder { color: var(--day-lightblue-color) }
 
 body {
     background-color: #E5E5E5;
+    color: var(--main-black-text-color);
 }
 
 section {
