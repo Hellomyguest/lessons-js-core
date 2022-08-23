@@ -1,28 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
-
-:root {
-  --main-boxborder-color: #8055ff;
-  --main-border-color: #459df5;
-  --main-black-text-color: #000000;
-  --day-lightblue-color: #bad8f5;
-  --error-color: #f53152;
-  --blue-color: #459df5;
-  --day-white-color: #ffffff;
-  --main-focus-outline-color: #367dc4;
-  --postponed-icon-color: #ff8c56;
-  --violet-color: #8055ff;
-  --green-color: #0fb864;
-  --night-theme-color: #2b2d33;
-  --night-theme-colo-dark: #171b1f;
-}
-
-input::-webkit-input-placeholder {
-  color: var(--day-lightblue-color);
-}
 
 body {
   background-color: #e5e5e5;
-  color: var(--main-black-text-color);
+  /* color: var(--main-black-text-color); */
 }
 
 section {
@@ -55,10 +34,6 @@ section {
   top: -1rem;
   left: 0;
   color: var(--main-boxborder-color);
-  font-family: Ubuntu;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 16px;
   letter-spacing: 0px;
 }
 
@@ -79,10 +54,6 @@ section {
   top: -1rem;
   left: 0;
   color: var(--main-boxborder-color);
-  font-family: Ubuntu;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 16px;
   letter-spacing: 0px;
 }
 
@@ -99,10 +70,6 @@ section {
   top: -1rem;
   left: 0;
   color: var(--main-boxborder-color);
-  font-family: Ubuntu;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 16px;
   letter-spacing: 0px;
 }
 
@@ -119,10 +86,6 @@ section {
   top: -1rem;
   left: 0;
   color: var(--main-boxborder-color);
-  font-family: Ubuntu;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 16px;
   letter-spacing: 0px;
 }
 
@@ -139,10 +102,6 @@ section {
   top: -1rem;
   left: 0;
   color: var(--main-boxborder-color);
-  font-family: Ubuntu;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 16px;
   letter-spacing: 0px;
 }
 
@@ -170,10 +129,6 @@ section {
   top: -1rem;
   left: 0;
   color: var(--main-boxborder-color);
-  font-family: Ubuntu;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 16px;
   letter-spacing: 0px;
 }
 
@@ -190,9 +145,5 @@ section {
   top: -1rem;
   left: 0;
   color: var(--main-boxborder-color);
-  font-family: Ubuntu;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 16px;
   letter-spacing: 0px;
 }

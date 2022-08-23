@@ -26,17 +26,7 @@
   display: block;
   width: 100%;
   height: 1rem;
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.8125rem;
-  line-height: 1rem;
-  color: var(--main-black-text-color);
 }
-
-/* .dropdown_multiple {
-    height: 13rem;
-} */
 
 .dropdown_go-to-page {
   height: 5.5rem;
@@ -63,14 +53,6 @@
   display: flex;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-}
-
-.checkbox__text {
-  font-family: Ubuntu;
-  font-size: 0.8125rem;
-  font-weight: 400;
-  line-height: 1rem;
-  color: var(--main-black-text-color);
 }
 
 .dropdown_multiple > .dropdown__item > .checkbox > label > .checkbox__icon {

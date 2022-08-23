@@ -61,11 +61,6 @@ body {
 } */
 
 .load__text {
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
   color: var(--blue-color);
 }
 
@@ -100,11 +95,6 @@ body {
   align-items: center;
   left: 0.5rem;
   top: 0.5rem;
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
 }
 
 .input__button_v {
@@ -193,15 +183,6 @@ body {
 
 .table__cell_canseled {
   opacity: 0.5;
-}
-
-.table__text {
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.8125rem;
-  line-height: 1rem;
-  color: var(--main-black-text-color);
 }
 
 .table__text_heading {
@@ -314,11 +295,6 @@ body {
 }
 
 .footer__bunch {
-  font-family: "Ubuntu";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
   color: var(--blue-color);
 }
 
