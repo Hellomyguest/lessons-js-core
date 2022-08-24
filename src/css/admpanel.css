@@ -85,6 +85,10 @@ body {
   padding: 0.25rem 2rem 0.25rem 1.75rem;
 }
 
+.input__text-field_to + .input__button {
+  display: none;
+}
+
 .input__area {
   width: 100%;
 }

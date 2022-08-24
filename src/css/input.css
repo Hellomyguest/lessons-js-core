@@ -30,11 +30,18 @@ input::-webkit-input-placeholder {
   letter-spacing: 0px;
   text-align: left;
   background-color: var(--day-white-color);
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  color: var(--main-black-text-color);
 }
 
 .input__icon {
   width: 1rem;
   height: 1rem;
+  fill: var(--day-lightblue-color);
   stroke: var(--day-lightblue-color);
 }
 
@@ -51,37 +58,28 @@ input::-webkit-input-placeholder {
   font: inherit;
   color: inherit;
   background-color: transparent;
-  display: none;
+  /* display: none; */
   cursor: pointer;
 }
 
-.input__icon_disabled {
+.input_disabled .input__icon {
   fill: var(--main-black-text-color);
+  /* background-color: var(--day-lightblue-color); */
+}
+
+.input_disabled .input__text-field {
   background-color: var(--day-lightblue-color);
+  border-color: var(--blue-color);
+  color: var(--main-black-text-color);
+}
+.input_disabled .input__button {
+  cursor: default;
+}
+
+.input_invalid .input__text-field {
+  border-color: var(--error-color);
 }
 
 .input__text-field:focus {
   outline-color: var(--main-focus-outline-color);
-}
-
-.input__text-field:invalid {
-  border-color: var(--error-color);
-}
-
-.input__text-field:disabled {
-  background-color: var(--day-lightblue-color);
-  border-color: var(--blue-color);
-}
-
-.input__text-field:invalid ~ .input__button_x-medium {
-  display: block;
-}
-
-.input__text-field:disabled ~ .input__button_disabled {
-  display: block;
-  cursor: default;
-}
-
-.input__text-field:not([value=""]) ~ .input__icon_x-medium {
-  display: flex;
 }
